@@ -27,14 +27,16 @@
             echo "Nhập vào tên hoặc mật khẩu";
           }
           else{
+            $_SESSION['username'] = $username;
             $query=mysqli_query($conn,"select * from users where username='$username'");
             $run=mysqli_fetch_array($query);
             $lever=$run['lever'];
-            if($lever==1){
+            $_SESSION['lever'] = $lever;
+            if($lever==0){
               header('location: user.php');
-            }elseif ($lever==2) {
-              header('location: teacher.php');
-            }elseif ($lever==3) {
+            }else if ($lever==1) {
+              header('location: teacher_page.php');
+            }else if ($lever==2) {
               header('location: admin_page.php');
             }
           }

@@ -26,7 +26,7 @@
           <a href="#!">Tổ Chức</a>
         </li>
         <li>
-          <a href="#!">Hợp Tác Liên Kết</a>
+          <a href="hoptaclienket.php">Hợp Tác Liên Kết</a>
         </li>
       </ul>
 

@@ -1,6 +1,9 @@
-<link rel="stylesheet" href="css/style.css">
+<?php
+    session_start();
+?>
 <header class="container">
       <img src="images/logo123.jpg" alt="">
+      <h6> <b>Chào mừng <?php echo $_SESSION['username'] ?>!</b > </h6>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -9,7 +12,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">Trang Chủ <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="user.php">Trang Chủ <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -18,7 +21,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="loichaomung.php">Lời Chào Mừng</a>
           <a class="dropdown-item" href="gioithieu.php">Giới Thiệu</a>
-          <a class="dropdown-item" href="#">Hợp Tác Và liên kết</a>
+          <a class="dropdown-item" href="hoptaclienket.php">Hợp Tác Và liên kết</a>
         </div>
       </li><li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -59,29 +62,24 @@
           Tin Tức
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Sự Kiện</a>
-          <a class="dropdown-item" href="#">CSE Trên Báo</a>>
+          <a class="dropdown-item" href="sukien.php">Sự Kiện</a>
+          <a class="dropdown-item" href="#">CSE Trên Báo</a>
         </div>
       </li><li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Sinh Viên
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Tài Liệu Sinh Viên</a>
+          <a class="dropdown-item" href="tailieumonhoc.php">Tài Liệu Sinh Viên</a>
           <a class="dropdown-item" href="#">Tổ Tư Vấn Học Tập</a>
           <a class="dropdown-item" href="#">Biểu Mẫu ĐATN</a>
           <a class="dropdown-item" href="#">Luận Văn Tốt Nghiệp</a>
 
         </div>
-      </li><li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Đăng Nhập
+      </li><li class="nav-item ">
+        <a class="nav-link " href="logout.php" id="navbarDropdown" role="button" >
+          Đăng Xuất
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">Thông TIn</a>
-          <a class="dropdown-item" href="#">Đổi Mật Khẩu</a>
-          <a class="dropdown-item" href="#">Đăng Xuất</a>
-        </div>
       </li>
     </ul>
   </div>

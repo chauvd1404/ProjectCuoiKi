@@ -1,8 +1,9 @@
 <?php
     session_start();
-    // if(!isset($_SESSION['username'])){
-    //     header('location:login.php');  
-    // }else{
+    if(!isset($_SESSION['lever'])){   
+        header('location: login.php');
+    }else{
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +22,7 @@
   <div class="container-fluid">
     <header class="container">
       <img src="images/logo123.jpg" alt="">
-      <h6> <b>Xin Chào <?php echo $_SESSION['username'] ?> !</b > </h6>
+      <h6> <b>Chào mừng <?php echo $_SESSION['username'] ?>!</b > </h6>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,7 +30,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-        <a class="nav-link" href="index.php">Trang Chủ<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="admin_page.php">Trang Chủ<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="gioithieu.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -97,8 +98,9 @@
         </li><div class="dropdown open">
             <button  class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Quản Trị</button>
             <div class="dropdown-menu" aria-labelledby="triggerId">
-                <button class="dropdown-item" href="#">Quản lí bài giảng</button>
-                <button class="dropdown-item " href="#">Điểm danh sinh viên</button>
+                <a class="dropdown-item" type="button" href="tailieumonhoc.php">Quản lí bài giảng</a>
+                <a class="dropdown-item " type="button" href="#">Điểm danh sinh viên</a>
+                <a class="dropdown-item " type="button" href="quantri.php">Quản lí Admin</a>
             </div>
         </div>
         </ul>
@@ -213,163 +215,9 @@
         </div>
         </section>
         <!-- footer -->
-        <section >
-        <div class="container">
-            
-    <footer class="page-footer font-small indigo">
-
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left" id = "footer">
-
-    <!-- Grid row -->
-    <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-md-3 mx-auto">
-        <!-- Links -->
-        <ul class="list-unstyled">
-            <li>
-            <a href="gioithieu.php">Giới Thiệu</a>
-            </li>
-            <li>
-            <a href="logokhoacntt.php">Logo của khoa CNTT</a>
-            </li>
-            <li>
-            <a href="loichaomung.php">Lời Chào Mừng</a>
-            </li>
-            <li>
-            <a href="#!">Tổ Chức</a>
-            </li>
-            <li>
-            <a href="#!">Hợp Tác Liên Kết</a>
-            </li>
-        </ul>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-md-3 mx-auto">
-
-        <!-- Links -->
-
-
-        <ul class="list-unstyled">
-            <li>
-            <a href="#!">Đào Tạo</a>
-            </li>
-            <li>
-            <a href="#!">Mô Hình Đào Tạo</a>
-            </li>
-            <li>
-            <a href="#!">Đào Tạo Đại Học</a>
-            </li>
-            <li>
-            <a href="#!">Định Hướng Nghề Nghiệp</a>
-            </li>
-            <li>
-            <a href="#!">Đào Tạo Sau Đại Học</a>
-            </li>
-        </ul>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-md-3 mx-auto">
-
-        <!-- Links -->
-
-
-        <ul class="list-unstyled">
-            <li>
-            <a href="#!">NGhiên Cứu Khoa Học</a>
-            </li>
-            <li>
-            <a href="#!">Thông Tin Senminar</a>
-            </li>
-            <li>
-            <a href="#!">Các Đề Tài Dự Án</a>
-            </li>
-            <li>
-            <a href="#!">Công Trình Công Bố</a>
-            </li>
-            <li>
-            <a href="#!">Các Phòng Thí Nghiệm</a>
-            </li>
-        </ul>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-md-3 mx-auto">
-
-        <!-- Links -->
-
-
-        <ul class="list-unstyled">
-            <li>
-            <a href="#!">Công Nghệ Phần Mền</a>
-            </li>
-            <li>
-            <a href="#!">Hệ Thống Thông Tin</a>
-            </li>
-            <li>
-            <a href="#!">Khoa Học Máy Tính</a>
-            </li>
-            <li>
-            <a href="#!">Kĩ Thuật Máy Tính Và Mạng</a>
-            </li>
-            <li>
-            <a href="#!">Toán Học</a>
-            </li>
-            <li>
-            <a href="#!">Trung Tâm Tin Học</a>
-            </li>
-        </ul>
-
-        </div>
-        <!-- Grid column -->
-
-    </div>
-    <!-- Grid row -->
-
-    </div>
-    <!-- Footer Links -->
-
-    <!-- Copyright -->
-    <div  id ="coppy">
-    <div class= "row">
-    <div class="col-xs-12 col-sm-6 col-md-3">
-    <img src="images/logofooter.png" alt="" style="background:blue" width= "100%" height ="100px">
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-9">
-    <p> 2017 Khoa Công nghệ thông tin - Đại học Thủy lợi</p>
-    <p>Địa chỉ: nhà C1, Đại học Thủy lợi, 175 Tây Sơn, Đống Đa, Hà Nội. Điện thoại: (+84)-024 3 5632211. Email: vpkcntt@tlu.edu.vn</p>
-    </div>
-
-    </div>
-    </div>
-
-
-    <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
-
-        </div>
-
-
-    </section>
+        <?php require('footer.php'); ?>
     </body>
     </html>
-<?php      
-    // }
+<?php   
+  }
 ?>

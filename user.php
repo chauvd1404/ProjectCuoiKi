@@ -1,4 +1,9 @@
-
+<?php
+    session_start();
+    if(!isset($_SESSION['username'])){
+        header('location:login.php');  
+    }else{
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +21,7 @@
   <div class="container-fluid">
     <header class="container">
       <img src="images/logo123.jpg" alt="">
+      <h6><b>Chào mừng <?php echo $_SESSION['username'] ?> !</b></h6>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -24,7 +30,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-      <a class="nav-link" href="index.php">Trang Chủ<span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="user.php">Trang Chủ<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="gioithieu.php" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -82,14 +88,18 @@
           Sinh Viên
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Tài Liệu Sinh Viên</a>
+          <a class="dropdown-item" href="tailieumonhoc.php">Tài Liệu Sinh Viên</a>
           <a class="dropdown-item" href="#">Tổ Tư Vấn Học Tập</a>
           <a class="dropdown-item" href="#">Biểu Mẫu ĐATN</a>
           <a class="dropdown-item" href="#">Luận Văn Tốt Nghiệp</a>
 
         </div>
       </li><li class="nav-item ">
-        <a class="nav-link" href="login.php" id="navbarDropdown" role="button" > Đăng Nhập
+        <a class="nav-link" href="edit.php" name="change_pass" type="submit" role="button" > Đổi Mật Khẩu
+        </a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="logout.php" id="navbarDropdown" role="button" > Đăng Xuất
         </a>
       </li>
     </ul>
@@ -361,3 +371,6 @@
 </section>
 </body>
 </html>
+<?php 
+    }
+?>

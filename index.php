@@ -33,7 +33,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="loichaomung.php">Lời Chào Mừng</a>
           <a class="dropdown-item" href="gioithieu.php">Giới Thiệu</a>
-          <a class="dropdown-item" href="#">Hợp Tác Và liên kết</a>
+          <a class="dropdown-item" href="hoptaclienket.php">Hợp Tác Và liên kết</a>
         </div>
       </li><li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -74,59 +74,60 @@
           Tin Tức
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Sự Kiện</a>
-          <a class="dropdown-item" href="#">CSE Trên Báo</a>>
+          <a class="dropdown-item" href="sukien.php">Sự Kiện</a>
+          <a class="dropdown-item" href="#">CSE Trên Báo</a>
         </div>
       </li><li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Sinh Viên
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Tài Liệu Sinh Viên</a>
+          <a class="dropdown-item" href="tailieumonhoc.php">Tài Liệu Sinh Viên</a>
           <a class="dropdown-item" href="#">Tổ Tư Vấn Học Tập</a>
           <a class="dropdown-item" href="#">Biểu Mẫu ĐATN</a>
           <a class="dropdown-item" href="#">Luận Văn Tốt Nghiệp</a>
 
         </div>
-      </li><li class="nav-item ">
-        <a class="nav-link" href="login.php" id="navbarDropdown" role="button" > Đăng Nhập
-        </a>
+      </li><li class="nav-item">      
+      <a class="nav-link " href="dangky.php"  role="button" >Đăng Ký</a>        
+    </li>
+      <li class="nav-item">      
+        <a class="nav-link " href="login.php"  role="button" >Đăng Nhập</a>        
       </li>
     </ul>
   </div>
 </nav>
     </header>
-    <!-- Slide -->
     <section>
       <div class= "container">
         <div class="row">
           <div class="col-md-12">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="images/anhtruong0.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="images/anhtruong1.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="images/anhtruong2.jpg" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/anhtruong0.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/anhtruong1.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/anhtruong2.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
           </div>
         </div>
       </div>
@@ -136,23 +137,48 @@
       </i><b><p id = "sukien-title">Sự Kiện</p></b>
         <div class="row"id="sukien">
           <div class="col-xs-12 col-sm-6 col-md-4"><h4 style="color:red">Văn NGhệ</h4>
-            <b style="color:blue">Văn Nghệ Chào mừng Tân Sinh Viên</b>
-            <p>Thời Gian:19h-Ngày 30-8-2019</p>
-            <p>Địa Điểm: hội trường T45</p>
-            <P> Khoa Công Nghệ Thông Tin</P>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="event-date">
+              <span class="calheader">30</span>
+              <span class= "calbottom">8-2019</span>
+            </div>  
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-12">
+            <p>Văn nghệ Chào Mừng Tân Sinh Viên</p>
+            <p>Thời Gian : 30/08/2019</p>
+            <p>Địa Điểm : Hội Trường T45</p>
+            <P>&nbsp;&nbsp;&nbsp;</P>
+        </div>
             <img src="images/vannghe.jpg" alt="" width = "100%" height = " 150px">
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4"><h4 style="color:red"> Chung kết  bóng đá khoa</h4>
-            <b style="color:blue">Giải Bóng đá khoa CNTT</b>
-            <p>Thời Gian:14h-Ngày 29-9-2019</p>
-            <p>Địa Điểm:Sân bóng trường</p>
-            <p>58TH1-58Th2</p>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="event-date">
+              <span class="calheader">30</span>
+              <span class= "calbottom">8-2019</span>
+            </div>  
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-12">
+            <p>Chung Kết Bóng Đá Khoa</p>
+            <p>Thời Gian : 22/12/2019</p>
+            <p>Địa Điểm : Sân Bóng Thủy Lợi</p>
+            <P>&nbsp;&nbsp;&nbsp;</P>
+        </div>
             <img src="images/bongda.png" alt="" width = "100%" height = " 150px">
          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4"><h4 style="color:red">Thi chuẩn đầu ra A2</h4>
-            <p style="color:blue"><b>Thông báo một số thông tin về chuẩn đầu ra tiếng Anh (A2) cho sinh viên đại học hệ chính quy Trường Đại học Thủy lợi</b></p>
-            <p>xem chi tiết tại link:</p>
-            <a href="http://www.tlu.edu.vn/quy-phat-trien-khoa-hoc-cong-nghe/thong-bao-mot-so-thong-tin-ve-chuan-dau-ra-tieng-4920">Chuẩn đầu ra A2</a>
+          <div class="col-xs-12 col-sm-6 col-md-4"><h4 style="color:red">Hội Thảo Samsung</h4>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="event-date">
+                <span class="calheader">15</span>
+                <span class= "calbottom">12-2019</span>
+              </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-12">
+            <p>Hội Thảo Samsung</p>
+            <p>Thời Gian:15/12/1019</p>
+            <p>Địa Điểm:Hội Trường T45</p>
+            <P>&nbsp;&nbsp;&nbsp;</P>
+        </div>
             <img src="images/a22.jpg" alt="" width = "100%" height = " 150px">
         </div>
         </div>
@@ -162,28 +188,31 @@
       <div class="container">
         <div class="row" id="tintuc">
           <div class="col-md-9"id="tintucthuong">
-            <h1>Tin Tức</h1>
+            <h5>Tin Tức</h5>
             <div class= "row">
           <div class="col-xs-12 col-sm-6 col-md-4"><a href="#">KẾT QUẢ NGHIÊN CỨU SINH VIÊN LẦN THỨ 32</a>
           <P>&nbsp;&nbsp;&nbsp;</P>
           <img src="images/ketquanghiencukhoahoc.jpg" alt="" height ="150px" width ="100%">
           <P>&nbsp;&nbsp;&nbsp;</P>
           <div class="content">
-            <p style="font-family: 'Open Sans',sans-serif;font-size: 13px;line-height: 1.7;">Hội nghị khoa học thường niên của sinh viên khoa Công nghệ thông tin được tổ chức vào ngày  22/3/2019 tại khu hội thảo Quốc tế K1 Trường Đại học Thủy lợi. Đây là hoạt động thường niên được khoa CNTT tổ chức định kì hàng năm. Vượt qua gần 20 đề tài, năm nay 11 đề tài được chọn báo cáo trong ngày hội NCKH, được chia làm hai tiểu ban.</p>
+            <p style="font-family: 'Open Sans',sans-serif;font-size: 13px;line-height: 1.7;">Hội nghị khoa học thường niên của sinh viên khoa Công nghệ thông tin được tổ chức vào ngày  22/3/2019 tại khu hội thảo Quốc tế K1 Trường Đại học Thủy lợi. Đây là hoạt động thường niên được khoa CNTT tổ chức định kì hàng năm. Vượt qua gần 20 đề tài, năm nay 11 đề tài được chọn báo cáo trong ngày hội NCKH, được chia làm hai tiểu ban.<a href="#">xem thêm>>></a></p>
+            
           </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4"><a href="#">CÔNG BỐ QUYẾT ĐỊNH  BỔ NHIỆM VIỆN CHỨC QUẢN LÝ CẤP BỘ MÔN KHOA CNTT</a>
             <img src="images/congboquyetdinh.jpg" alt="" height ="150px" width ="100%">
             <P>&nbsp;&nbsp;&nbsp;</P>
             <div class="content">
-            <p style="font-family: 'Open Sans',sans-serif;font-size: 13px;line-height: 1.7;">Trong những ngày đầu tháng 1 năm 2019, thừa ủy quyền của Hiệu trưởng trường Đại học Thủy Lợi, Đảng ủy - Ban Chủ nhiệm khoa Công nghệ thông tin đã tiến hành trao quyết định bổ nhiệm chức vụ Trưởng Bộ môn Toán học cho TS Nguyễn Hữu Thọ, Phó trưởng Bộ môn Toán học cho TS Đỗ Lân, ...</p>
+            <p style="font-family: 'Open Sans',sans-serif;font-size: 13px;line-height: 1.7;">Trong những ngày đầu tháng 1 năm 2019, thừa ủy quyền của Hiệu trưởng trường Đại học Thủy Lợi, Đảng ủy - Ban Chủ nhiệm khoa Công nghệ thông tin đã tiến hành trao quyết định bổ nhiệm chức vụ Trưởng Bộ môn Toán học cho TS Nguyễn Hữu Thọ, Phó trưởng Bộ môn Toán học cho TS Đỗ Lân, ...<a href="#">xem thêm>>></a></p>
+            
           </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4"> <a href="#">SINH VIÊN KHOA CNTT GIAO LƯU VỚI CÔNG TY QUALICA NHẬT BẢN</a>
           <p>&nbsp;&nbsp;&nbsp;</p>
           <img src="images/sinhviengiaoluu.jpg" alt="" height ="150px" width ="100%">
           <P>&nbsp;&nbsp;&nbsp;</P>
-          <p style="font-family: 'Open Sans',sans-serif;font-size: 13px;line-height: 1.7;">(TLU) – Chiều ngày 23/04/2018, tại Trường Đại học Thủy lợi diễn ra buổi giao lưu giữa sinh viên Khoa CNTT với các lãnh đạo và nhân viên của công ty Qualica đang làm việc tại Nhật Bản</p>
+          <p style="font-family: 'Open Sans',sans-serif;font-size: 13px;line-height: 1.7;">(TLU) – Chiều ngày 23/04/2018, tại Trường Đại học Thủy lợi diễn ra buổi giao lưu giữa sinh viên Khoa CNTT với các lãnh đạo và nhân viên của công ty Qualica đang làm việc tại Nhật Bản...<a href="#">xem thêm>>></a></p>
+          
           </div>
         </div>
           </div>
@@ -232,7 +261,7 @@
           <a href="#!">Tổ Chức</a>
         </li>
         <li>
-          <a href="#!">Hợp Tác Liên Kết</a>
+          <a href="hoptaclienket.php">Hợp Tác Liên Kết</a>
         </li>
       </ul>
 
